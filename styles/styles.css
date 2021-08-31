@@ -1,0 +1,122 @@
+@font-face {
+    font-family: Lemon;
+    src: url(static/Fonts/Lemon\ Brownies.ttf);
+}
+
+body {
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+header{
+    background-color: #6929aa;
+    position: sticky;
+    top: 0;
+    height: 75px;
+    width: 100%;
+}
+
+#title{
+    width: 200px;
+    position: relative;
+    left: calc(50vw - 100px);
+    top: 5px;
+}
+
+.header-buttons{
+    width: 30px;
+    position: absolute;
+    top: 18px;
+}
+
+.header-buttons-text{
+    font-size: 24px;
+    color: white;
+    font-family: "Trebuchet MS";
+    position: absolute;
+    top: 30px;
+}
+/*
+#search-bar{
+    height: 36px;
+    position: absolute;
+    top: 15px;
+    left: calc(74% + 30px);
+    animation-duration: 2s;
+    animation-name: open-dialog;
+    animation-fill-mode: forwards;
+}*/
+
+#welcome{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    width: 100%;
+    font-family: 'Lemon';
+    background-color: #f275b4;
+}
+
+#welcome-text{
+    margin: 20px;
+    position: relative;
+}
+
+@media screen and (min-width: 901px) {
+    #welcome{
+        font-size: 50px;
+    }
+
+    #search{
+        right: 25%;
+    }
+
+    #search-text{
+        right: calc(25vw + 40px);
+    }
+
+    #cart{
+        right: 5%;
+    }
+
+    #cart-text{
+        right: calc(5vw + 40px);
+    }
+
+    #welcome{
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #welcome{
+        font-size: 25px;
+    }
+
+    .header-buttons-text{
+        color: #6a29aa00;
+    }
+
+    #search{
+        left: 6%;
+    }
+
+    #cart{
+        right: 6%;
+    }
+
+    #welcome{
+        height: 200px;
+    }
+}
+
+/******************************************************* ANIMATIONS*********************************************
+@keyframes open-dialog{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 20%;
+    }
+}*/
