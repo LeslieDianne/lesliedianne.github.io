@@ -28,7 +28,7 @@ header{
 .header-buttons{
     width: 30px;
     position: absolute;
-    top: 23px;
+    top: 18px;
 }
 
 .header-buttons-text{
@@ -53,7 +53,6 @@ header{
     display: flex;
     flex-wrap: wrap;
     color: white;
-    font-size: 50px;
     width: 100%;
     font-family: 'Lemon';
     background-color: #f275b4;
@@ -65,6 +64,10 @@ header{
 }
 
 @media screen and (min-width: 901px) {
+    #welcome{
+        font-size: 50px;
+    }
+
     #search{
         right: 25%;
     }
@@ -87,6 +90,10 @@ header{
 }
 
 @media screen and (max-width: 900px) {
+    #welcome{
+        font-size: 25px;
+    }
+
     .header-buttons-text{
         color: #6a29aa00;
     }
