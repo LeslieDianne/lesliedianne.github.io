@@ -57,6 +57,7 @@ header{
     width: 100%;
     font-family: 'Lemon';
     background-image: url(static/Images/Front.svg);
+    contain: size;
 }
 
 #welcome-text{
